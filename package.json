@@ -1,0 +1,37 @@
+{
+  "name": "sealdice-star-in-a-bottle",
+  "version": "1.5.1",
+  "description": "瓶中星光：投放、捡取漂流瓶与每日跳入星海。",
+  "author": "莫一、星·麒、BegoniaHe",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "./sealw watch --once --target 1.6.0",
+    "check": "npm run format:check && npm run typecheck && npm run build && npm test",
+    "core:sync": "./sealw core sync --target 1.6.0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "package": "npm run types:sync && ./sealw package --target 1.6.0",
+    "scenario": "./sealw scenario test --target 1.6.0",
+    "smoke": "./sealw test --target 1.6.0",
+    "test": "node --experimental-strip-types --test tests/unit/*.test.ts",
+    "typecheck": "./sealw typecheck --target 1.6.0",
+    "types:sync": "./sealw types sync --target 1.6.0",
+    "verify": "npm run check && npm run smoke && npm run scenario",
+    "watch": "./sealw watch --target 1.6.0"
+  },
+  "engines": {
+    "node": ">=26.5.0 <27",
+    "npm": ">=12.0.1 <13"
+  },
+  "packageManager": "npm@12.0.1",
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "sealwrapper": "git+https://github.com/BegoniaStar/sealwrapper.git#08c3b1bbfb9826c58c97e98467b8d51027febb5e"
+  },
+  "allowScripts": {
+    "esbuild@0.27.1": true,
+    "sealwrapper@0.1.0": true
+  }
+}

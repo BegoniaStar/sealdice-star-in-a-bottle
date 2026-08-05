@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "package": {
+    "name": "瓶中星光",
+    "version": "1.5.1",
+    "authors": ["莫一", "星·麒", "BegoniaHe"],
+    "license": "MIT",
+    "description": "瓶中星光：在星海中投放、捡取漂流瓶，或每天跳入星海化作一颗星星。",
+    "homepage": "https://github.com/BegoniaStar/sealdice-star-in-a-bottle"
+  },
+  "build": {
+    "entry": "src/index.ts",
+    "ecmaTarget": "es6",
+    "bundleFileName": "sealdice-star-in-a-bottle.js"
+  },
+  "sealDice": {
+    "buildTarget": ["1.6.0"],
+    "defaultTarget": "1.6.0"
+  },
+  "release": {
+    "directory": "release",
+    "checksum": "sha256",
+    "artifactPolicy": {
+      "forbiddenPaths": [],
+      "forbiddenExtensions": []
+    }
+  },
+  "sealpack": {
+    "packageId": "BegoniaStar/sealdice-star-in-a-bottle",
+    "minSealDice": "1.6.0",
+    "contents": {
+      "scripts": {
+        "bundle": true,
+        "path": "scripts/sealdice-star-in-a-bottle.js"
+      }
+    },
+    "dependencies": {},
+    "permissions": {
+      "network": false,
+      "networkHosts": [],
+      "acknowledgeUnrestrictedNetwork": false,
+      "fileRead": [],
+      "fileWrite": [],
+      "dangerous": false,
+      "httpServer": false,
+      "ipc": []
+    },
+    "readme": "README.md",
+    "assets": [],
+    "store": {
+      "category": "tool",
+      "icon": "",
+      "banner": "",
+      "screenshots": []
+    }
+  }
+}

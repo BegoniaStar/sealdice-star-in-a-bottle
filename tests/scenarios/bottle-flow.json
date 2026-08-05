@@ -1,0 +1,38 @@
+{
+  "release": true,
+  "title": "投放、查看并捡取漂流瓶",
+  "clock": "2026-08-01T00:00:00Z",
+  "messages": [
+    {
+      "sequence": 1,
+      "qq": "3909311212",
+      "nickname": "Alice",
+      "text": ".扔瓶子 Hello"
+    },
+    {
+      "sequence": 2,
+      "qq": "3909311212",
+      "nickname": "Alice",
+      "text": ".查看星海"
+    },
+    {
+      "sequence": 3,
+      "qq": "3909311212",
+      "nickname": "Alice",
+      "text": ".捡瓶子"
+    }
+  ],
+  "expect": {
+    "outputs": [
+      {
+        "inReplyToSequence": 1,
+        "text": "你成功向星海丢入一个瓶子，瓶子渐渐飘远，与星星们混在一起，你看不见它的踪迹了"
+      },
+      { "inReplyToSequence": 2, "text": "当前星海中共有 1 个瓶子和星星。" },
+      {
+        "inReplyToSequence": 3,
+        "textPattern": "^你捡到了一个来自Alice的瓶子，上面写着: Hello。\\n瓶子专属ID为: bottle_[0-9]+\\n"
+      }
+    ]
+  }
+}

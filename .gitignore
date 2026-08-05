@@ -1,0 +1,6 @@
+/node_modules/
+/.seal/
+/release/
+/build/
+/dist/
+*.tsbuildinfo

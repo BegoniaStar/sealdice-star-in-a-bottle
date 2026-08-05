@@ -1,0 +1,31 @@
+{
+  "release": true,
+  "title": "每天只能跳入星海一次",
+  "clock": "2026-08-01T00:00:00Z",
+  "messages": [
+    {
+      "sequence": 1,
+      "qq": "3909311212",
+      "nickname": "Alice",
+      "text": ".跳入星海"
+    },
+    {
+      "sequence": 2,
+      "qq": "3909311212",
+      "nickname": "Alice",
+      "text": ".跳入星海"
+    }
+  ],
+  "expect": {
+    "outputs": [
+      {
+        "inReplyToSequence": 1,
+        "textPattern": "^你成功跳入星海，变成了一颗 .+ 进入星海。$"
+      },
+      {
+        "inReplyToSequence": 2,
+        "text": "你想要再次跳入星海，星海里调皮的星星飘过来刺了一下你的屁股，你疼的跑了出去。"
+      }
+    ]
+  }
+}
