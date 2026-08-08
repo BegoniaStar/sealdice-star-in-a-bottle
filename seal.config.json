@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "package": {
     "name": "瓶中星光",
-    "version": "1.5.1",
-    "authors": ["莫一", "星·麒", "BegoniaHe"],
+    "version": "1.5.2",
+    "authors": ["Szzrain", "莫一", "星·麒", "BegoniaHe"],
     "license": "MIT",
     "description": "瓶中星光：在星海中投放、捡取漂流瓶，或每天跳入星海化作一颗星星。",
     "homepage": "https://github.com/BegoniaStar/sealdice-star-in-a-bottle"
@@ -26,7 +26,7 @@
     }
   },
   "sealpack": {
-    "packageId": "BegoniaStar/sealdice-star-in-a-bottle",
+    "packageId": "BegoniaHe/sealdice-star-in-a-bottle",
     "minSealDice": "1.6.0",
     "contents": {
       "scripts": {

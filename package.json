@@ -1,8 +1,8 @@
 {
   "name": "sealdice-star-in-a-bottle",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "瓶中星光：投放、捡取漂流瓶与每日跳入星海。",
-  "author": "莫一、星·麒、BegoniaHe",
+  "author": "Szzrain、莫一、星·麒、BegoniaHe",
   "private": true,
   "type": "module",
   "license": "MIT",
