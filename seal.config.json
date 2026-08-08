@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "package": {
     "name": "瓶中星光",
-    "version": "1.5.2",
+    "version": "1.5.3",
     "authors": ["Szzrain", "莫一", "星·麒", "BegoniaHe"],
     "license": "MIT",
     "description": "瓶中星光：在星海中投放、捡取漂流瓶，或每天跳入星海化作一颗星星。",
